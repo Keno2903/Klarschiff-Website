@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KlarSchiff – Entrümpelung & Haushaltsauflösung</title>
+  <meta name="description" content="Professionelle Entrümpelung, Haushaltsauflösung und Räumung – schnell, diskret und zum fairen Festpreis. Kostenloser Besichtigungstermin." />
+  <meta name="theme-color" content="#0ea5e9" />
+  <link rel="icon" href="favicon.png"/>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "KlarSchiff Entrümpelung",
+  "description": "Professionelle Entrümpelung, Haushaltsauflösung und Räumung – schnell, diskret und zum fairen Festpreis. Kostenloser Besichtigungstermin.",
+  "areaServed": "Nordrhein-Westfalen",
+  "url": "https://www.example.com/",
+  "email": "info@Klarschiff.de",
+  "telephone": "+49 176 47374295",
+  "priceRange": "€€",
+  "openingHours": "Mo-Fr 08:00-18:00",
+  "sameAs": [],
+  "serviceType": [
+    "Entrümpelung",
+    "Haushaltsauflösung",
+    "Wohnungsauflösung",
+    "Betriebsauflösung",
+    "Sperrmüllentsorgung"
+  ]
+}
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: { colors: { accent: "#0ea5e9" } } }
+    }
+  </script>
+  <style>
+    .glass { backdrop-filter: blur(10px); background: rgba(255,255,255,0.75); }
+    .shadow-soft { box-shadow: 0 10px 30px rgba(0,0,0,0.08); }
+    .section-pad { padding-top: 5rem; padding-bottom: 5rem; }
+    @media (min-width: 768px) { .section-pad { padding-top: 6rem; padding-bottom: 6rem; } }
+    html { scroll-behavior: smooth; }
+  </style>
+
+  <link rel="apple-touch-icon" href="apple-touch-icon.png"/>
+</head>
+<body class="bg-gradient-to-b from-white to-slate-50 text-slate-800">
+
+  <header class="sticky top-0 z-30 bg-white/80 glass border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex h-16 items-center justify-between">
+        <a href="index.html#top" class="flex items-center gap-3"><img src="logo.png" alt="KlarSchiff Logo" class="h-12 w-auto md:h-24" loading="eager" /></a>
+        <nav class="hidden md:flex items-center gap-8 text-sm">
+          <a href="index.html#leistungen" class="hover:text-accent">Leistungen</a>
+          <a href="index.html#ablauf" class="hover:text-accent">Ablauf</a>
+          <a href="index.html#preise" class="hover:text-accent">Preise</a>
+          <a href="index.html#rechner" class="hover:text-accent">Kostenrechner</a>
+          <a href="index.html#faq" class="hover:text-accent">FAQ</a>
+          <a href="index.html#kontakt" class="inline-flex items-center rounded-full bg-accent px-4 py-2 font-medium text-white shadow-soft hover:opacity-90">Angebot anfragen</a>
+        </nav>
+        <button id="navToggle" class="md:hidden inline-flex items-center justify-center rounded-md p-2 focus:outline-none focus:ring" aria-label="Menü">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16"/>
+          </svg>
+        </button>
+      </div>
+      <div id="mobileNav" class="md:hidden hidden pb-4">
+        <a href="index.html#leistungen" class="block py-2">Leistungen</a>
+        <a href="index.html#ablauf" class="block py-2">Ablauf</a>
+        <a href="index.html#preise" class="block py-2">Preise</a>
+        <a href="index.html#rechner" class="block py-2">Kostenrechner</a>
+        <a href="index.html#faq" class="block py-2">FAQ</a>
+        <a href="index.html#kontakt" class="block py-2 text-accent font-semibold">Angebot anfragen</a>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- Hero -->
+  <section id="top" class="relative overflow-hidden">
+    <div class="absolute inset-0 -z-10 pointer-events-none" aria-hidden="true">
+      <svg class="opacity-20" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <radialGradient id="g" cx="50%" cy="0%" r="90%">
+            <stop offset="0%" stop-color="#0ea5e9" stop-opacity="0.25"/>
+            <stop offset="100%" stop-color="white" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#g)"/>
+      </svg>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 section-pad">
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <p class="inline-flex items-center gap-2 text-xs font-medium px-3 py-1 rounded-full bg-slate-100 text-slate-700 border border-slate-200 mb-4">
+            <span>Geprüfter Entrümpelungsdienst</span>
+            <span class="w-1.5 h-1.5 rounded-full bg-accent inline-block"></span>
+            <span>Seit 18.09.2025</span>
+          </p>
+          <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight leading-tight">
+            Entrümpelung & Haushaltsauflösung – <span class="text-accent">schnell, sauber, fair.</span>
+          </h1>
+          <p class="mt-5 text-lg text-slate-600">
+            Wir räumen Wohnungen, Häuser, Keller, Dachböden und Betriebe. Diskret, zuverlässig und mit Festpreisgarantie nach kostenloser Besichtigung.
+          </p>
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a href="#kontakt" class="inline-flex items-center rounded-full bg-accent px-5 py-3 text-white font-semibold shadow-soft hover:opacity-90">
+              Kostenloses Angebot
+            </a>
+            <a href="#leistungen" class="inline-flex items-center rounded-full px-5 py-3 border border-slate-300 font-semibold hover:bg-slate-50">
+              Leistungen ansehen
+            </a>
+          </div>
+          <div class="mt-6 flex items-center gap-6 text-sm text-slate-600">
+            <div class="flex items-center gap-2"><span class="inline-block w-2 h-2 rounded-full bg-green-500"></span>Termine kurzfristig</div>
+            <div class="flex items-center gap-2"><span class="inline-block w-2 h-2 rounded-full bg-green-500"></span>Nachhaltige Entsorgung</div>
+            <div class="flex items-center gap-2"><span class="inline-block w-2 h-2 rounded-full bg-green-500"></span>Besenreine Übergabe</div>
+          </div>
+        </div>
+        <div class="relative">
+          <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
+            <div class="flex items-center gap-4">
+              <img src="logo.png" alt="KlarSchiff Logo" class="h-10 w-auto" loading="lazy" />
+              <div>
+                <p class="text-sm text-slate-500">Zertifizierte Entrümpelung</p>
+                <p class="font-semibold">Kostenlose Besichtigung & Festpreis</p>
+              </div>
+            </div>
+            <ul class="mt-6 space-y-3 text-sm">
+              <li class="flex items-start gap-3">
+                <span class="mt-1 inline-block w-5 h-5 rounded-full bg-accent/10 border border-accent"></span>
+                <span>Wohnungs- & Haushaltsauflösungen</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="mt-1 inline-block w-5 h-5 rounded-full bg-accent/10 border border-accent"></span>
+                <span>Keller, Dachboden, Garage, Garten</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="mt-1 inline-block w-5 h-5 rounded-full bg-accent/10 border border-accent"></span>
+                <span>Betriebs- & Büroauflösungen</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span class="mt-1 inline-block w-5 h-5 rounded-full bg-accent/10 border border-accent"></span>
+                <span>Entsorgung & Wertanrechnung</span>
+              </li>
+            </ul>
+            <div class="mt-6 rounded-xl bg-slate-50 p-4 border border-slate-200 text-sm">
+              <p><strong>Sofortanfrage:</strong> <a href="mailto:info@Klarschiff.de" class="text-accent underline">info@Klarschiff.de</a> • <a href="tel:+49 176 4737429517647374295" class="text-accent underline">+49 176 47374295</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Leistungen -->
+  <section id="leistungen" class="section-pad">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold tracking-tight">Leistungen</h2>
+      <p class="mt-3 text-slate-600">Alles aus einer Hand – transparent, versichert und termintreu.</p>
+      <div class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
+          <h3 class="font-semibold text-lg">Entrümpelung</h3>
+          <p class="mt-2 text-sm text-slate-600">Wohnungen, Häuser, Messiwohnungen, Keller & Dachböden.</p>
+          <ul class="mt-4 space-y-1 text-sm text-slate-600 list-disc list-inside">
+            <li>Besichtigung & Festpreisangebot</li>
+            <li>Besenreine Übergabe</li>
+            <li>Umweltgerechte Entsorgung</li>
+          </ul>
+        </article>
+        <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
+          <h3 class="font-semibold text-lg">Haushaltsauflösung</h3>
+          <p class="mt-2 text-sm text-slate-600">Komplette Auflösungen inkl. Demontage, Verpackung und Abtransport.</p>
+          <ul class="mt-4 space-y-1 text-sm text-slate-600 list-disc list-inside">
+            <li>Wertanrechnung möglicher Gegenstände</li>
+            <li>Kurzfristige Termine</li>
+            <li>Diskrete Abwicklung</li>
+          </ul>
+        </article>
+        <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
+          <h3 class="font-semibold text-lg">Gewerbe & Büro</h3>
+          <p class="mt-2 text-sm text-slate-600">Betriebsauflösungen, Archivräumungen, Lagerflächen.</p>
+          <ul class="mt-4 space-y-1 text-sm text-slate-600 list-disc list-inside">
+            <li>Entsorgung nach Vorschrift</li>
+            <li>Terminierung außerhalb der Öffnungszeiten</li>
+            <li>Auf Wunsch inkl. Endreinigung</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="mt-8 grid sm:grid-cols-2 gap-6">
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
+          <h3 class="font-semibold">Warum KlarSchiff?</h3>
+          <ul class="mt-3 space-y-2 text-sm text-slate-700">
+            <li>✔️ Festpreise nach Besichtigung</li>
+            <li>✔️ Haftpflichtversichert</li>
+            <li>✔️ Eigene Fahrzeuge & Team</li>
+            <li>✔️ Nachhaltige Trennung & Entsorgung</li>
+          </ul>
+        </div>
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
+          <h3 class="font-semibold">Was wir mitbringen</h3>
+          <ul class="mt-3 space-y-2 text-sm text-slate-700">
+            <li>✔️ Werkzeug & Verpackungsmaterial</li>
+            <li>✔️ Schutz- & Sicherheitsausrüstung</li>
+            <li>✔️ Container & Transporter</li>
+            <li>✔️ Erfahrung & Sorgfalt</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ablauf -->
+  <section id="ablauf" class="section-pad bg-white border-y border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold tracking-tight">So läuft's ab</h2>
+      <div class="mt-8 grid md:grid-cols-4 gap-6">
+        <div class="rounded-2xl border border-slate-200 p-6 shadow-soft bg-slate-50">
+          <span class="text-accent font-bold">01</span>
+          <h3 class="mt-2 font-semibold">Kontakt</h3>
+          <p class="mt-2 text-sm text-slate-600">Sie melden sich per Telefon, E-Mail oder Formular.</p>
+        </div>
+        <div class="rounded-2xl border border-slate-200 p-6 shadow-soft bg-slate-50">
+          <span class="text-accent font-bold">02</span>
+          <h3 class="mt-2 font-semibold">Besichtigung</h3>
+          <p class="mt-2 text-sm text-slate-600">Kostenlos & unverbindlich – auch per Video möglich.</p>
+        </div>
+        <div class="rounded-2xl border border-slate-200 p-6 shadow-soft bg-slate-50">
+          <span class="text-accent font-bold">03</span>
+          <h3 class="mt-2 font-semibold">Festpreis</h3>
+          <p class="mt-2 text-sm text-slate-600">Transparenter Festpreis inkl. Entsorgung & Transport.</p>
+        </div>
+        <div class="rounded-2xl border border-slate-200 p-6 shadow-soft bg-slate-50">
+          <span class="text-accent font-bold">04</span>
+          <h3 class="mt-2 font-semibold">Räumung</h3>
+          <p class="mt-2 text-sm text-slate-600">Schnelle, saubere Durchführung mit besenreiner Übergabe.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kostenrechner -->
+  <section id="rechner" class="section-pad bg-white border-y border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold tracking-tight">Kostenrechner – schneller Richtpreis</h2>
+      <p class="mt-3 text-slate-600">Geben Sie ein paar Eckdaten ein und erhalten Sie sofort einen unverbindlichen Richtpreis. Der finale Festpreis folgt nach kostenloser Besichtigung.</p>
+
+      <div class="mt-8 grid md:grid-cols-2 gap-6">
+        <form id="calcForm" class="rounded-2xl border border-slate-200 bg-slate-50 p-6 shadow-soft">
+          <div class="grid gap-4">
+            <div>
+              <label class="text-sm font-medium">Art des Objekts</label>
+              <select id="type" class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2">
+                <option value="wohnen">Wohnung / Haus</option>
+                <option value="keller">Keller / Dachboden / Garage</option>
+                <option value="gewerbe">Gewerbe / Büro</option>
+              </select>
+            </div>
+            <div>
+              <label class="text-sm font-medium">Fläche (m²)</label>
+              <input id="area" type="number" min="5" step="1" value="60" class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2" />
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+              <div>
+                <label class="text-sm font-medium">Etage</label>
+                <input id="floor" type="number" min="0" step="1" value="2" class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2" />
+              </div>
+              <div>
+                <label class="text-sm font-medium">Aufzug</label>
+                <select id="lift" class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2">
+                  <option value="ja">Ja</option>
+                  <option value="nein">Nein</option>
+                </select>
+              </div>
+            </div>
+            <div>
+              <label class="text-sm font-medium">Füllgrad / Aufwand</label>
+              <select id="clutter" class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2">
+                <option value="wenig">Wenig</option>
+                <option value="normal" selected>Normal</option>
+                <option value="viel">Viel</option>
+              </select>
+            </div>
+            <div>
+              <label class="text-sm font-medium">Trageweg &gt; 20 m</label>
+              <select id="carry" class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2">
+                <option value="nein">Nein</option>
+                <option value="ja">Ja</option>
+              </select>
+            </div>
+            <button id="calcBtn" class="mt-2 inline-flex items-center justify-center rounded-xl bg-accent px-5 py-3 text-white font-semibold shadow-soft hover:opacity-90">Richtpreis berechnen</button>
+          </div>
+        </form>
+
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
+          <div class="flex items-center gap-3">
+            <img src="logo.png" alt="KlarSchiff Logo" class="h-10 w-auto" loading="lazy" />
+            <div>
+              <p class="text-sm text-slate-500">Schnelles Ergebnis</p>
+              <p class="font-semibold">Unverbindlicher Richtpreis</p>
+            </div>
+          </div>
+          <div id="result" class="mt-6 rounded-xl bg-slate-50 p-4 border border-slate-200">
+            <p class="text-sm text-slate-600">Bitte geben Sie Ihre Daten ein und klicken auf „Berechnen“.</p>
+          </div>
+          <div class="mt-4 flex flex-wrap gap-3">
+            <a id="mailtoOffer" class="inline-flex items-center rounded-full bg-accent px-5 py-3 text-white font-semibold shadow-soft hover:opacity-90" href="#">Angebot per E‑Mail</a>
+            <a href="#kontakt" class="inline-flex items-center rounded-full px-5 py-3 border border-slate-300 font-semibold hover:bg-slate-50">Kontakt</a>
+          </div>
+          <p class="text-xs text-slate-500 mt-3">Hinweis: Richtpreise dienen zur Ersteinschätzung. Verbindliche Festpreise erhalten Sie nach der Besichtigung.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Preise -->
+  <section id="preise" class="section-pad">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold tracking-tight">Transparente Preise</h2>
+      <p class="mt-3 text-slate-600">Jeder Auftrag ist individuell. Nach der Besichtigung erhalten Sie ein verbindliches Festpreisangebot – ohne Überraschungen.</p>
+      <div class="mt-8 grid lg:grid-cols-3 gap-6">
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
+          <h3 class="font-semibold">Kleinaufträge</h3>
+          <p class="mt-2 text-sm text-slate-600">Keller, Garage, Einzelräume</p>
+          <p class="mt-4 text-3xl font-extrabold">ab 199&nbsp;€</p>
+          <p class="text-xs text-slate-500 mt-1">Richtwert – finaler Preis nach Besichtigung</p>
+        </div>
+        <div class="rounded-2xl border border-2 border-accent bg-white p-6 shadow-soft">
+          <h3 class="font-semibold">Wohnungen & Häuser</h3>
+          <p class="mt-2 text-sm text-slate-600">Komplette Auflösungen</p>
+          <p class="mt-4 text-3xl font-extrabold">Festpreis</p>
+          <p class="text-xs text-slate-500 mt-1">Inkl. Entsorgung, Transport & Reinigung</p>
+        </div>
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
+          <h3 class="font-semibold">Gewerbe</h3>
+          <p class="mt-2 text-sm text-slate-600">Büros, Lager, Betriebe</p>
+          <p class="mt-4 text-3xl font-extrabold">Individuell</p>
+          <p class="text-xs text-slate-500 mt-1">Terminierung außerhalb Öffnungszeiten möglich</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- FAQ -->
+  <section id="faq" class="section-pad bg-white border-y border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-2xl md:text-3xl font-bold tracking-tight">Häufige Fragen</h2>
+      <div class="mt-8 space-y-4">
+        <details class="rounded-xl border border-slate-200 bg-white p-5 shadow-soft">
+          <summary class="font-semibold cursor-pointer">In welchem Gebiet seid ihr unterwegs?</summary>
+          <p class="mt-3 text-sm text-slate-600">Unser Einsatzgebiet ist ganz <strong>NRW (Nordrhein‑Westfalen)</strong> – z.&nbsp;B. Köln, Düsseldorf, Dortmund, Essen, Münster, Bonn, Wuppertal, Bielefeld u.&nbsp;v.&nbsp;m.</p>
+        </details>
+        <details class="rounded-xl border border-slate-200 bg-white p-5 shadow-soft">
+          <summary class="font-semibold cursor-pointer">Wie schnell bekomme ich einen Termin?</summary>
+          <p class="mt-3 text-sm text-slate-600">Meist innerhalb weniger Tage. In eiligen Fällen versuchen wir noch schneller zu helfen.</p>
+        </details>
+        <details class="rounded-xl border border-slate-200 bg-white p-5 shadow-soft">
+          <summary class="font-semibold cursor-pointer">Bietet ihr Festpreise an?</summary>
+          <p class="mt-3 text-sm text-slate-600">Ja. Nach der kostenlosen Besichtigung erhalten Sie ein verbindliches Festpreisangebot inkl. Entsorgung, Transport und besenreiner Übergabe.</p>
+        </details>
+        <details class="rounded-xl border border-slate-200 bg-white p-5 shadow-soft">
+          <summary class="font-semibold cursor-pointer">Rechnet ihr Werte an?</summary>
+          <p class="mt-3 text-sm text-slate-600">Verwertbare Gegenstände werden fair angerechnet und vom Gesamtpreis abgezogen.</p>
+        </details>
+        <details class="rounded-xl border border-slate-200 bg-white p-5 shadow-soft">
+          <summary class="font-semibold cursor-pointer">Wie entsorgt ihr?</summary>
+          <p class="mt-3 text-sm text-slate-600">Sortenrein, nachhaltig und nach Vorschrift. Auf Wunsch erhalten Sie Nachweise der Entsorgung.</p>
+        </details>
+        <details class="rounded-xl border border-slate-200 bg-white p-5 shadow-soft">
+          <summary class="font-semibold cursor-pointer">Seid ihr versichert?</summary>
+          <p class="mt-3 text-sm text-slate-600">Ja, wir arbeiten haftpflichtversichert.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Kontakt -->
+  <section id="kontakt" class="section-pad">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 gap-10">
+        <div>
+          <h2 class="text-2xl md:text-3xl font-bold tracking-tight">Kontakt & Angebot</h2>
+          <p class="mt-3 text-slate-600">Schreiben Sie uns oder rufen Sie an – wir melden uns schnell zurück.</p>
+          <div class="mt-6 rounded-2xl border border-slate-200 bg-white p-6 shadow-soft space-y-4">
+            <p><strong>E-Mail:</strong> <a href="mailto:info@Klarschiff.de" class="text-accent underline">info@Klarschiff.de</a></p>
+            <p><strong>Telefon:</strong> <a href="tel:+49 176 4737429517647374295" class="text-accent underline">+49 176 47374295</a></p>
+            <p><strong>Servicegebiet:</strong> NRW – ganz Nordrhein‑Westfalen</p>
+            <p class="text-xs text-slate-500">Impressum & Datenschutz: Bitte eigene Firmendaten ergänzen.</p>
+          </div>
+        </div>
+        <form name="Kontakt" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="danke.html" class="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft">
+          <input type="hidden" name="form-name" value="Kontakt">
+          <p class="hidden"><label>Bitte nicht ausfüllen: <input name="bot-field"></label></p>
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label class="text-sm font-medium">Name</label>
+              <input name="name" class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2" placeholder="Vor- und Nachname" required>
+            </div>
+            <div>
+              <label class="text-sm font-medium">E-Mail</label>
+              <input name="email" type="email" class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2" placeholder="Ihre E-Mail" required>
+            </div>
+            <div class="sm:col-span-2">
+              <label class="text-sm font-medium">Adresse / Ort</label>
+              <input name="adresse" class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2" placeholder="Straße, PLZ, Ort">
+            </div>
+            <div class="sm:col-span-2">
+              <label class="text-sm font-medium">Nachricht</label>
+              <textarea name="nachricht" class="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2" rows="5" placeholder="Was soll geräumt werden? Fläche, Etage, Aufzug, Fotos ..."></textarea>
+            </div>
+            <div class="sm:col-span-2">
+              <button type="submit" class="w-full inline-flex items-center justify-center rounded-xl bg-accent px-5 py-3 text-white font-semibold shadow-soft hover:opacity-90">
+                Angebot anfordern
+              </button>
+              <p class="text-xs text-slate-500 mt-2">Wir melden uns kurzfristig. Übermittlung per Netlify Forms.</p>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="border-t border-slate-200 py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+        <div class="flex items-center gap-3">
+          <img src="logo.png" alt="KlarSchiff Logo" class="h-10 w-auto" loading="lazy" />
+          <p class="text-sm text-slate-500">© 2025 KlarSchiff. Alle Rechte vorbehalten.</p>
+        </div>
+        <div class="text-sm text-slate-600 flex gap-4">
+          <a href="impressum.html" class="hover:text-accent">Impressum</a>
+          <a href="datenschutz.html" class="hover:text-accent">Datenschutz</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script>
+    // Mobile nav toggle
+    document.getElementById('navToggle')?.addEventListener('click', () => {
+      document.getElementById('mobileNav').classList.toggle('hidden');
+    });
+
+    function euros(n){ return new Intl.NumberFormat('de-DE', { style:'currency', currency:'EUR', maximumFractionDigits:0 }).format(n); }
+
+    function computeRange(values){
+      const base = { wohnen:[25,45], keller:[18,35], gewerbe:[30,60] }[values.type] || [25,45];
+      let [minR,maxR] = base;
+      const clutter = { wenig:[0.9,1.0], normal:[1.0,1.1], viel:[1.2,1.4] }[values.clutter] || [1.0,1.1];
+      let floors = Math.max(0, parseInt(values.floor||0));
+      const noLift = values.lift === 'nein';
+      const floorMultMin = 1 + (noLift ? floors*0.03 : 0);
+      const floorMultMax = 1 + (noLift ? floors*0.06 : 0);
+      const carryMult = values.carry === 'ja' ? [1.05,1.10] : [1.0,1.0];
+      let area = Math.max(5, parseFloat(values.area||0));
+      let low = area * minR * clutter[0] * floorMultMin * carryMult[0];
+      let high = area * maxR * clutter[1] * floorMultMax * carryMult[1];
+      low = Math.max(low, 199);
+      return [Math.round(low), Math.round(high)];
+    }
+
+    function updateResult(){
+      const values = {
+        type: document.getElementById('type').value,
+        area: document.getElementById('area').value,
+        floor: document.getElementById('floor').value,
+        lift: document.getElementById('lift').value,
+        clutter: document.getElementById('clutter').value,
+        carry: document.getElementById('carry').value
+      };
+      const [low, high] = computeRange(values);
+      const res = document.getElementById('result');
+      res.innerHTML = `<div><p class="text-slate-600 text-sm">Ihr Richtpreis:</p>
+        <p class="mt-1 text-3xl font-extrabold">${euros(low)} – ${euros(high)}</p>
+        <p class="mt-2 text-xs text-slate-500">inkl. Arbeitszeit, Transport & fachgerechter Entsorgung (nach Besichtigung als Festpreis).</p></div>`;
+      const subject = encodeURIComponent('Richtpreis-Anfrage Entrümpelung');
+      const body = encodeURIComponent(
+        `Art: ${values.type}\nFläche: ${values.area} m²\nEtage: ${values.floor}\nAufzug: ${values.lift}\nFüllgrad: ${values.clutter}\nTrageweg >20m: ${values.carry}\n`+
+        `Richtpreis: ${euros(low)} – ${euros(high)}\n`+
+        `Bitte um Besichtigungstermin und verbindliches Festpreisangebot.`
+      );
+      const mail = document.getElementById('mailtoOffer');
+      if (mail) mail.href = `mailto:info@Klarschiff.de?subject=${subject}&body=${body}`;
+    }
+
+    document.getElementById('calcBtn')?.addEventListener('click', (e) => { e.preventDefault(); updateResult(); });
+  </script>
+</body>
+</html>
